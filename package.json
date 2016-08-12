@@ -1,0 +1,30 @@
+{
+  "name": "gigasecond_birthday_react",
+  "version": "1.0.0",
+  "description": "an easy react app",
+  "main": "app/main.js",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.12.12"
+  },
+  "scripts": {
+    "test": "'hi'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayqui/gigasecond_birthday_react.git"
+  },
+  "author": "jayqui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayqui/gigasecond_birthday_react/issues"
+  },
+  "homepage": "https://github.com/jayqui/gigasecond_birthday_react#readme"
+}
