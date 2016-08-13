@@ -2,8 +2,12 @@ var React = require('react');
 
 var SensitiveInput = require('./sensitive_input');
 
-var InputsContainer = React.createClass({
-  render: function() {
+class InputsContainer extends React.Component {
+  constructor (props) {
+    super(props);
+  }
+
+  render () {
     var birthday = this.props.birthday;
     var handleChange = this.props.handleChange;
     var inputs = Object.keys(birthday).map(function(unit, idx){
@@ -12,6 +16,6 @@ var InputsContainer = React.createClass({
 
     return <div>{inputs}</div>;
   }
-});
+};
 
 module.exports = InputsContainer;

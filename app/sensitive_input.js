@@ -1,7 +1,7 @@
 var React = require('react');
 
-var SensitiveInput = React.createClass({
-  render: function () {
+class SensitiveInput extends React.Component {
+  render () {
     return (
       <div>
       <label>{this.props.timeUnit}</label>
@@ -11,6 +11,6 @@ var SensitiveInput = React.createClass({
       </div>
     );
   }
-});
+};
 
 module.exports = SensitiveInput;
