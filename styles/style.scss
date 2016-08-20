@@ -1,25 +1,40 @@
 $master-max-width: 40em;
+// $master-min-width: 40em;
 $master-min-height: 10em;
 
 $primary-blue: #759DB4;
 $primary-yellow: #FFB7A0;
 $primary-orange: #BFEB93;
 
+$break-small: 60em;
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: $primary-blue;
+  @media (max-width: $break-small) {
+    background-color: aqua;
+  }
 }
 
 .master-container {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   margin: (-1 * $master-min-height / 2) (-1 * $master-max-width / 2) 0 (-1 * $master-max-width / 2);
+  // margin: (-1 * $master-min-height / 2) auto 0 auto;
+  // margin: 0 auto;
   padding: ($master-max-width / 50);
   max-width: $master-max-width;
+  // min-width: $master-min-width;
   min-height: $master-min-height;
   background-color: $primary-yellow;
   font-size: 1.75em;
+  @media (max-width: $break-small) {
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 3vw;
+  }
   // margin: 0 auto;
 
   .inputs-container {
@@ -48,4 +63,3 @@ body {
     }
   }
 }
-
