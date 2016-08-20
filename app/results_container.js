@@ -17,10 +17,13 @@ class ResultsContainer extends React.Component {
                                         this.props.birthday.minute,
                                         this.props.birthday.second);
     return (
-      <div>
-        Your birthday: {birthday.toString()}
-        <br/>
-        Your gigasecond birthday: {this.calculateGigasecondBirthday(birthday).toString()}
+      <div className='results-container'>
+        <div className='birthday-container'>
+          Your birthday: {birthday.toString()}
+        </div>
+        <div className='birthday-container gigasecond-birthday-container'>
+          Your gigasecond birthday: {this.calculateGigasecondBirthday(birthday).toString()}
+        </div>
       </div>
     );
   }

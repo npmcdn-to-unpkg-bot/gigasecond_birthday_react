@@ -8,7 +8,7 @@ class MasterContainer extends React.Component {
     super(props);
     this.state = {
       birthday: {
-        year: 1950,
+        year: '',
         month: 1,
         day: 1,
         hour: 12,
@@ -27,7 +27,7 @@ class MasterContainer extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='master-container'>
         <InputsContainer birthday={this.state.birthday} handleChange={this.handleChange}/>
         <ResultsContainer birthday={this.state.birthday}/>
       </div>
