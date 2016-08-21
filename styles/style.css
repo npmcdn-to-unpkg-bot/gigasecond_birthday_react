@@ -1,10 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #ccc url("../assets/clock.jpg") no-repeat top center;
+  background: #ccc url("../assets/calendar.jpg") no-repeat top center;
   background-size: 100%; }
   @media (max-width: 800px) {
     body {
-      background-color: #FF5F04; } }
+      background: #FF5F04; } }
 
 .master-container {
   margin: 0 auto;

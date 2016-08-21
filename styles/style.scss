@@ -11,10 +11,10 @@ $break-small: 800px;
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: $primary-gray url('../assets/clock.jpg') no-repeat top center;
+  background: $primary-gray url('../assets/calendar.jpg') no-repeat top center;
   background-size: 100%;
   @media (max-width: $break-small) {
-    background-color: $intense-orange;
+    background: $intense-orange;
   }
 }
 
