@@ -7,7 +7,7 @@ body {
       background: #FF5F04; } }
 
 .master-container {
-  margin: 0 auto;
+  margin: 20px auto 0;
   background-color: #fff;
   border-left: 7px solid #FF5F04;
   border-right: 7px solid #FF5F04;
