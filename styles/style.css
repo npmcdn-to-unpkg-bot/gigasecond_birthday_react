@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ccc; }
+  background: #ccc url("../assets/clock.jpg") no-repeat top center;
+  background-size: 100%; }
   @media (max-width: 800px) {
     body {
       background-color: #FF5F04; } }
