@@ -1,38 +1,55 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #759DB4; }
-  @media (max-width: 60em) {
+  background-color: #ccc; }
+  @media (max-width: 800px) {
     body {
-      background-color: aqua; } }
+      background-color: #FF5F04; } }
 
 .master-container {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  margin: -5em -20em 0 -20em;
-  padding: 0.8em;
-  max-width: 40em;
+  margin: 0 auto;
+  background-color: #fff;
+  border-left: 7px solid #FF5F04;
+  border-right: 7px solid #FF5F04;
+  border-radius: 40px;
+  padding: 1vh 11.5vw;
+  max-width: 550px;
   min-height: 10em;
-  background-color: #FFB7A0;
   font-size: 1.75em; }
-  @media (max-width: 60em) {
+  @media (max-width: 800px) {
     .master-container {
       top: 0;
       left: 0;
       margin: 0 auto;
-      font-size: 3vw; } }
+      font-size: 4vw; } }
   .master-container .inputs-container label {
     text-align: center; }
   .master-container .inputs-container input {
-    font-size: 0.75em;
-    text-align: center; }
+    font-size: 1em;
+    text-align: center;
+    padding: 0; }
+  .master-container .inputs-container input:focus {
+    background-color: #FFE4D4;
+    color: #FF5F04; }
   .master-container .results-container {
-    margin: 1em 0; }
+    margin: 13.75px 0; }
     .master-container .results-container .birthday-container {
-      padding: 0.8em;
+      margin: 25px 0 0;
       text-align: center; }
-  .master-container .sensitive-input label {
+      .master-container .results-container .birthday-container .form-element-label {
+        display: inline-block;
+        width: 75%;
+        background-color: #ccc;
+        border-radius: 5px; }
+    .master-container .results-container .gigasecond-birthday-container {
+      border-left: 20px solid #FF5F04;
+      border-right: 20px solid #FF5F04;
+      border-top: 1px ridge #FF5F04;
+      border-bottom: 1px ridge #FF5F04;
+      border-radius: 60px; }
+  .master-container .sensitive-form-element label {
     display: inline-block;
-    min-width: 50%; }
+    min-width: 35%;
+    background-color: #ccc;
+    border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,65 +1,82 @@
-$master-max-width: 40em;
-// $master-min-width: 40em;
+$master-max-width: 550px;
 $master-min-height: 10em;
 
-$primary-blue: #759DB4;
-$primary-yellow: #FFB7A0;
-$primary-orange: #BFEB93;
+$primary-white: #fff;
+$primary-gray: #ccc;
+$intense-orange: #FF5F04;
+$burnt-orange: #FF9D65;
+$orangey-white: #FFE4D4;
 
-$break-small: 60em;
+$break-small: 800px;
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: $primary-blue;
+  background-color: $primary-gray;
   @media (max-width: $break-small) {
-    background-color: aqua;
+    background-color: $intense-orange;
   }
 }
 
 .master-container {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  margin: (-1 * $master-min-height / 2) (-1 * $master-max-width / 2) 0 (-1 * $master-max-width / 2);
-  // margin: (-1 * $master-min-height / 2) auto 0 auto;
-  // margin: 0 auto;
-  padding: ($master-max-width / 50);
+  margin: 0 auto;
+  background-color: $primary-white;
+  border-left: 7px solid $intense-orange;
+  border-right: 7px solid $intense-orange;
+  border-radius: 40px;
+  padding: 1vh 11.5vw;
+
   max-width: $master-max-width;
-  // min-width: $master-min-width;
   min-height: $master-min-height;
-  background-color: $primary-yellow;
   font-size: 1.75em;
   @media (max-width: $break-small) {
     top: 0;
     left: 0;
     margin: 0 auto;
-    font-size: 3vw;
+    font-size: 4vw;
   }
-  // margin: 0 auto;
 
   .inputs-container {
     label {
       text-align: center;
     }
     input {
-      font-size: 0.75em;
+      font-size: 1em;
       text-align: center;
+      padding: 0;
+    }
+    input:focus {
+      background-color: $orangey-white;
+      color: $intense-orange;
     }
   }
 
   .results-container {
     margin: ($master-max-width / 40) 0;
     .birthday-container {
-      padding: ($master-max-width / 50);
+      margin: 25px 0 0;
       text-align: center;
+      .form-element-label {
+        display: inline-block;
+        width: 75%;
+        background-color: $primary-gray;
+        border-radius: 5px;
+      }
+    }
+    .gigasecond-birthday-container {
+      border-left: 20px solid $intense-orange;
+      border-right: 20px solid $intense-orange;
+      border-top: 1px ridge $intense-orange;
+      border-bottom: 1px ridge $intense-orange;
+      border-radius: 60px;
     }
   }
 
-  .sensitive-input {
+  .sensitive-form-element {
     label {
       display: inline-block;
-      // min-width: $master-max-width / 2;
-      min-width: 50%;
+      min-width: 35%;
+      background-color: $primary-gray;
+      border-radius: 5px;
     }
   }
 }

@@ -19,10 +19,12 @@ class ResultsContainer extends React.Component {
     return (
       <div className='results-container'>
         <div className='birthday-container'>
-          Your birthday: {birthday.toString()}
+          <div className='form-element-label'>Your birthday:</div>
+          <div>{birthday.toString()}</div>
         </div>
         <div className='birthday-container gigasecond-birthday-container'>
-          Your gigasecond birthday: {this.calculateGigasecondBirthday(birthday).toString()}
+          <div className='form-element-label'>Your gigasecond birthday:</div>
+          <div>{this.calculateGigasecondBirthday(birthday).toString()}</div>
         </div>
       </div>
     );

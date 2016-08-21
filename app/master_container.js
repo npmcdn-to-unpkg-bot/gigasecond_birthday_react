@@ -12,8 +12,8 @@ class MasterContainer extends React.Component {
         month: 1,
         day: 1,
         hour: 12,
-        minute: 13,
-        second: 14,
+        minute: 0,
+        second: 0,
       },
     };
     this.handleChange = this.handleChange.bind(this);
