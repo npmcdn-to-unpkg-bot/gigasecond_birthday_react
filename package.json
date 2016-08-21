@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/jayqui/gigasecond_birthday_react/issues"
   },
-  "homepage": "https://github.com/jayqui/gigasecond_birthday_react#readme"
+  "homepage": "https://github.com/jayqui/gigasecond_birthday_react#readme",
+  "engines": {
+    "node": "4.5.0"
+  },
 }
