@@ -37,10 +37,10 @@ body {
       margin: 25px 0 0;
       text-align: center; }
       .master-container .results-container .birthday-container .form-element-label {
-        display: inline-block;
         width: 75%;
+        display: inline-block;
         background-color: #ccc;
-        border-radius: 5px; }
+        border-radius: 55px; }
     .master-container .results-container .gigasecond-birthday-container {
       border-left: 20px solid #FF5F04;
       border-right: 20px solid #FF5F04;
@@ -48,9 +48,9 @@ body {
       border-bottom: 1px ridge #FF5F04;
       border-radius: 60px; }
   .master-container .sensitive-form-element label {
-    display: inline-block;
     min-width: 35%;
+    display: inline-block;
     background-color: #ccc;
-    border-radius: 5px; }
+    border-radius: 55px; }
 
 /*# sourceMappingURL=style.css.map */

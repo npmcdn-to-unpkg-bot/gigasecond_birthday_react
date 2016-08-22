@@ -9,6 +9,12 @@ $orangey-white: #FFE4D4;
 
 $break-small: 800px;
 
+@mixin gray-label {
+  display: inline-block;
+  background-color: $primary-gray;
+  border-radius: 5px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: $primary-gray url('../assets/calendar.jpg') no-repeat top center;
@@ -57,10 +63,8 @@ body {
       margin: 25px 0 0;
       text-align: center;
       .form-element-label {
-        display: inline-block;
         width: 75%;
-        background-color: $primary-gray;
-        border-radius: 5px;
+        @include gray-label
       }
     }
     .gigasecond-birthday-container {
@@ -74,10 +78,8 @@ body {
 
   .sensitive-form-element {
     label {
-      display: inline-block;
       min-width: 35%;
-      background-color: $primary-gray;
-      border-radius: 5px;
+      @include gray-label
     }
   }
 }
